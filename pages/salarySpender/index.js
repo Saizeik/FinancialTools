@@ -62,19 +62,19 @@ export default function Home() {
                 <div className="bg-green-600  border border-coolGray-100 shadow-dashboard rounded-md ">
                   <div className="flex flex-col justify-center items-center  px-4 pt-8 pb-6 border-b border-coolGray-100 ">
 <form onSubmit={handleSubmit}>
-  <div className="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded mb-2  w-1/2 "><label className=" p-2"  for="monthlySpending">Monthly Spending:
+  <div className="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded mb-2  w-1/2 "><label className=" p-2"  htmlFor="monthlySpending">Monthly Spending:
   <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlySpending(e.target.value)}
     id="monthlySpending" name="SpendingForm" /></label></div>
   <div className="block flex text-2lg md:text-2lg font-bold text-white bg-red-400 border rounded mb-2  w-1/2 ">
-  <label className=" p-2" for="monthlyMortgageRent">Monthly Housing:
+  <label className=" p-2" htmlFor="monthlyMortgageRent">Monthly Housing:
   <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlyMortgageRent(e.target.value)}
     id="monthlyMortgageRent" name="SpendingForm" /></label></div>
   <div className="block flex text-2lg md:text-2lg font-bold text-white bg-green-400 border rounded mb-2  w-1/2 ">
-<label className=" p-2" for="savingsDebt">Monthly Savings:
+<label className=" p-2" htmlFor="savingsDebt">Monthly Savings:
   <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setSavings(e.target.value)}
     type="number" id="savingsDebt" name="SpendingForm" /></label></div>
     <div className="block flex text-2lg md:text-2lg font-bold text-white bg-yellow-400 border rounded mb-2  w-1/2 ">
-<label className=" p-2" for="savingsDebt">Monthly Debt:
+<label className=" p-2" htmlFor="savingsDebt">Monthly Debt:
   <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setDebt(e.target.value)}
     type="number" id="debt" name="SpendingForm" /></label></div>
  <div className="block flex text-2lg md:text-2lg font-bold text-white bg-purple-400 border rounded mb-2  w-1/2 ">  
