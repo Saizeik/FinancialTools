@@ -102,23 +102,23 @@ export const AccountForm = () => {
 
   return (
     <>
-      <div ClassName="flex justify-center">
-        <section ClassName="bg-coolGray-50 py-6 mr-20">
-          <div ClassName="container px-9 mx-auto">
-            <div ClassName="flex flex-wrap -m-3">
-              <div ClassName=" grow w-14 w-full md:w-full xl:w-full sm:w-full  p-1 ">
-                <div ClassName="bg-indigo-300 border border-coolGray-100 shadow-dashboard rounded-md ">
-                  <div ClassName="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
-                    <h4 ClassName=" text-2xl md:text-3xl font-bold text-white">
+      <div className="flex justify-center">
+        <section className="bg-coolGray-50 py-6 mr-20">
+          <div className="container px-9 mx-auto">
+            <div className="flex flex-wrap -m-3">
+              <div className=" grow w-14 w-full md:w-full xl:w-full sm:w-full  p-1 ">
+                <div className="bg-indigo-300 border border-coolGray-100 shadow-dashboard rounded-md ">
+                  <div className="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
+                    <h4 className=" text-2xl md:text-3xl font-bold text-white">
                       Enter Account Data
                     </h4>
                   </div>
                   <form onSubmit={handleSubmit}>
-                    <div ClassName="flex justify-start mb-2 ">
-                      <label ClassName="text-2lg md:text-2lg font-bold text-white mt-2 ">
+                    <div className="flex justify-start mb-2 ">
+                      <label className="text-2lg md:text-2lg font-bold text-white mt-2 ">
                         Account Name
                         <input
-                          ClassName="text-2lg md:text-2lg font-bold text-black w-20 ml-2"
+                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-2"
                           type="text"
                           value={name}
                           onChange={(event) => setName(event.target.value)}
@@ -126,11 +126,11 @@ export const AccountForm = () => {
                       </label>
                     </div>
 
-                    <div ClassName="flex justify-start mb-4">
-                      <label ClassName="text-2lg md:text-2lg font-bold text-white">
+                    <div className="flex justify-start mb-4">
+                      <label className="text-2lg md:text-2lg font-bold text-white">
                         Balance:
                         <input
-                          ClassName=" text-2lg md:text-2lg font-bold text-black w-20 ml-14 "
+                          className=" text-2lg md:text-2lg font-bold text-black w-20 ml-14 "
                           type="number"
                           value={balance}
                           onChange={(event) => setBalance(event.target.value)}
@@ -138,11 +138,11 @@ export const AccountForm = () => {
                       </label>
                     </div>
 
-                    <div ClassName="flex justify-start mb-4">
-                      <label ClassName="text-2lg md:text-2lg font-bold text-white">
+                    <div className="flex justify-start mb-4">
+                      <label className="text-2lg md:text-2lg font-bold text-white">
                         Min Payment:
                         <input
-                          ClassName="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
+                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
                           type="number"
                           value={payment}
                           onChange={(event) => setPayment(event.target.value)}
@@ -150,11 +150,11 @@ export const AccountForm = () => {
                       </label>
                     </div>
 
-                    <div ClassName="flex justify-start mb-4">
-                      <label ClassName="text-2lg md:text-2lg font-bold text-white">
+                    <div className="flex justify-start mb-4">
+                      <label className="text-2lg md:text-2lg font-bold text-white">
                         Interest Rate:
                         <input
-                          ClassName="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
+                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
                           type="number"
                           value={interestRate}
                           onChange={(event) =>
@@ -165,7 +165,7 @@ export const AccountForm = () => {
                     </div>
 
                     <button
-                      ClassName="text-2lg md:text-2lg font-bold text-white"
+                      className="text-2lg md:text-2lg font-bold text-white"
                       type="submit"
                     >
                       Add Account
@@ -178,7 +178,7 @@ export const AccountForm = () => {
                           {account.name} (${account.balance}, ${account.payment}, {account.interestRate}%
                           )
                           <button
-                            ClassName="text-2lg md:text-2lg font-bold text-white"
+                            className="text-2lg md:text-2lg font-bold text-white"
                             onClick={() => handleRemoveAccount(index)}
                           >
                             Delete Account
@@ -192,12 +192,12 @@ export const AccountForm = () => {
             </div>
           </div>
         </section>
-        <section ClassName="bg-coolGray-50 py-4">
-          <div ClassName="container px-4 mx-auto">
-            <div ClassName="flex flex-wrap -m-3">
-              <div ClassName=" mx-auto w-1/2 ">
-                <div ClassName="bg-white border border-coolGray-100 shadow-dashboard rounded-md">
-                  <div ClassName="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
+        <section className="bg-coolGray-50 py-4">
+          <div className="container px-4 mx-auto">
+            <div className="flex flex-wrap -m-3">
+              <div className=" mx-auto w-1/2 ">
+                <div className="bg-white border border-coolGray-100 shadow-dashboard rounded-md">
+                  <div className="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
                     <p>
                       You currently pay a total of
                       {<strong> ${fixedSum}</strong>} per month in minimum debt
@@ -235,11 +235,11 @@ export default function Debt() {
   return (
     <>
       <Navbar />
-      <div ClassName="py-20 bg-gray-900 radius-for-skewed">
-        <div ClassName="container mx-auto px-6">
-          <div ClassName="mb-16 max-w-md mx-auto text-center">
-            <h1 ClassName=" text-4xl md:text-5x text-indigo-300 font-bold">Debts</h1>
-            <h2 ClassName="text-4xl md:text-5xl font-bold text-white">
+      <div className="py-20 bg-gray-900 radius-for-skewed">
+        <div className="container mx-auto px-6">
+          <div className="mb-16 max-w-md mx-auto text-center">
+            <h1 className=" text-4xl md:text-5x text-indigo-300 font-bold">Debts</h1>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
               Do you want to cut your monthly debt payments in half the
               avalanche way?
             </h2>

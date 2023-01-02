@@ -68,9 +68,9 @@ const MyComponent = () => {
         <input type="text" name="monthlyPayments" />
       </label>
       <br />
-      <div ClassName="bg-purple-400 w-1/12">
+      <div className="bg-purple-400 w-1/12">
         <button
-          ClassName="button"
+          className="button"
           type="submit"
           onClick={() => {
             findLowestDebtBalances(debts);
@@ -80,7 +80,7 @@ const MyComponent = () => {
         </button>
       </div>
       <div>
-        <h6 ClassName="text-4xl font-bold">
+        <h6 className="text-4xl font-bold">
           Lowest Debt Balances: {lowestDebtBalances}
         </h6>
       </div>
