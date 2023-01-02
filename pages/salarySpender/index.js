@@ -49,43 +49,43 @@ export default function Home() {
   return (
   <>
   <Navbar />
-  <div class="py-20 bg-gray-900 radius-for-skewed">
-      <div class="container mx-auto px-6">
-        <div class="mb-16 max-w-md mx-auto text-center">
+  <div ClassName="py-20 bg-gray-900 radius-for-skewed">
+      <div ClassName="container mx-auto px-6">
+        <div ClassName="mb-16 max-w-md mx-auto text-center">
   
-  <h1 className="text-4xl md:text-6xl font-bold text-white text-3xl font-bold underline">Salary Spender</h1>
+  <h1 ClassName="text-4xl md:text-6xl font-bold text-white text-3xl font-bold underline">Salary Spender</h1>
   </div>
-  <section class="bg-coolGray-50 py-4">
-          <div class="container justify-center mx-auto">
-            <div class="flex flex-wrap -m-3">
-              <div class="w-full mx-auto md:w-1/2 xl:w-1/4 p-3">
-                <div class="bg-green-600  border border-coolGray-100 shadow-dashboard rounded-md ">
-                  <div class="flex flex-col justify-center items-center  px-4 pt-8 pb-6 border-b border-coolGray-100 ">
+  <section ClassName="bg-coolGray-50 py-4">
+          <div ClassName="container justify-center mx-auto">
+            <div ClassName="flex flex-wrap -m-3">
+              <div ClassName="w-full mx-auto md:w-1/2 xl:w-1/4 p-3">
+                <div ClassName="bg-green-600  border border-coolGray-100 shadow-dashboard rounded-md ">
+                  <div ClassName="flex flex-col justify-center items-center  px-4 pt-8 pb-6 border-b border-coolGray-100 ">
 <form onSubmit={handleSubmit}>
-  <div class="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded mb-2  w-1/2 "><label className=" p-2"  for="monthlySpending">Monthly Spending:
-  <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlySpending(e.target.value)}
+  <div ClassName="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded mb-2  w-1/2 "><label ClassName=" p-2"  for="monthlySpending">Monthly Spending:
+  <input ClassName="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlySpending(e.target.value)}
     id="monthlySpending" name="SpendingForm" /></label></div>
-  <div class="block flex text-2lg md:text-2lg font-bold text-white bg-red-400 border rounded mb-2  w-1/2 ">
-  <label className=" p-2" for="monthlyMortgageRent">Monthly Housing:
-  <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlyMortgageRent(e.target.value)}
+  <div ClassName="block flex text-2lg md:text-2lg font-bold text-white bg-red-400 border rounded mb-2  w-1/2 ">
+  <label ClassName=" p-2" for="monthlyMortgageRent">Monthly Housing:
+  <input ClassName="text-2md md:text-2md font-bold text-black border rounded w-3/4" type ="number" onChange={(e) => setMonthlyMortgageRent(e.target.value)}
     id="monthlyMortgageRent" name="SpendingForm" /></label></div>
-  <div class="block flex text-2lg md:text-2lg font-bold text-white bg-green-400 border rounded mb-2  w-1/2 ">
-<label className=" p-2" for="savingsDebt">Monthly Savings:
-  <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setSavings(e.target.value)}
+  <div ClassName="block flex text-2lg md:text-2lg font-bold text-white bg-green-400 border rounded mb-2  w-1/2 ">
+<label ClassName=" p-2" for="savingsDebt">Monthly Savings:
+  <input ClassName="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setSavings(e.target.value)}
     type="number" id="savingsDebt" name="SpendingForm" /></label></div>
-    <div class="block flex text-2lg md:text-2lg font-bold text-white bg-yellow-400 border rounded mb-2  w-1/2 ">
-<label className=" p-2" for="savingsDebt">Monthly Debt:
-  <input className="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setDebt(e.target.value)}
+    <div ClassName="block flex text-2lg md:text-2lg font-bold text-white bg-yellow-400 border rounded mb-2  w-1/2 ">
+<label ClassName=" p-2" for="savingsDebt">Monthly Debt:
+  <input ClassName="text-2md md:text-2md font-bold text-black border rounded w-3/4" onChange={(e) => setDebt(e.target.value)}
     type="number" id="debt" name="SpendingForm" /></label></div>
- <div class="block flex text-2lg md:text-2lg font-bold text-white bg-purple-400 border rounded mb-2  w-1/2 ">  
-<button className=" text-white text-center rounded-full py-2 px-12" type="submit">Submit</button></div> 
+ <div ClassName="block flex text-2lg md:text-2lg font-bold text-white bg-purple-400 border rounded mb-2  w-1/2 ">  
+<button ClassName=" text-white text-center rounded-full py-2 px-12" type="submit">Submit</button></div> 
 </form>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div className ="flex items-center h-12 mx-auto mt-6   3/4"><h6 id="output1" className="text-2xl md:text-4xl font-bold text-white mx-auto"></h6></div><div className ="flex items-center h-12 mx-auto mt-6  3/4"><h6 id="output2" className="text-2xl md:text-4xl font-bold text-white mx-auto  "></h6></div>
+<div ClassName ="flex items-center h-12 mx-auto mt-6   3/4"><h6 id="output1" ClassName="text-2xl md:text-4xl font-bold text-white mx-auto"></h6></div><div ClassName ="flex items-center h-12 mx-auto mt-6  3/4"><h6 id="output2" ClassName="text-2xl md:text-4xl font-bold text-white mx-auto  "></h6></div>
   
 </section>
   

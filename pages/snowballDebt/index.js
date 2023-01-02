@@ -71,7 +71,7 @@ export const AccountForm = () => {
       break;
     }
   }
-  console.log("payments", payments);
+  console.log("payments", payments); 
  
   const getdebtNames =  (accounts.map((account) => (
 {name: account.name,  payment: parseFloat(account.payment)}
@@ -112,18 +112,18 @@ export const AccountForm = () => {
   return (
     <>
     
-    <div className ="flex justify-center">
-      <section class="bg-coolGray-50 py-6 mr-20">
-        <div class="container px-9 mx-auto">
-          <div class="flex flex-wrap -m-3">
-            <div class=" grow w-14 w-full md:w-full xl:w-full sm:w-full  p-1 ">
-              <div class="bg-green-600 border border-coolGray-100 shadow-dashboard rounded-md ">
-                <div class="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100"><h4 class=" text-2xl md:text-3xl font-bold text-white">Enter Account Data</h4></div>
+    <div ClassName ="flex justify-center">
+      <section ClassName="bg-coolGray-50 py-6 mr-20">
+        <div ClassName="container px-9 mx-auto">
+          <div ClassName="flex flex-wrap -m-3">
+            <div ClassName=" grow w-14 w-full md:w-full xl:w-full sm:w-full  p-1 ">
+              <div ClassName="bg-green-600 border border-coolGray-100 shadow-dashboard rounded-md ">
+                <div ClassName="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100"><h4 ClassName=" text-2xl md:text-3xl font-bold text-white">Enter Account Data</h4></div>
                 <form onSubmit={handleSubmit}>
-                <div className ="flex justify-start mb-2 ">
-                  <label class="text-2lg md:text-2lg font-bold text-white mt-2 ">Account Name
+                <div ClassName ="flex justify-start mb-2 ">
+                  <label ClassName="text-2lg md:text-2lg font-bold text-white mt-2 ">Account Name
                     <input
-                    class="text-2lg md:text-2lg font-bold text-black w-20 ml-2"
+                    ClassName="text-2lg md:text-2lg font-bold text-black w-20 ml-2"
                       type="text"
                       value={name}
                       onChange={(event) => setName(event.target.value)}
@@ -131,12 +131,12 @@ export const AccountForm = () => {
                   </label>
                   </div>
                   
-                  <div className ="flex justify-start mb-4">
-                  <label class="text-2lg md:text-2lg font-bold text-white">
+                  <div ClassName ="flex justify-start mb-4">
+                  <label ClassName="text-2lg md:text-2lg font-bold text-white">
                     Balance:
                     
                     <input
-                       className=" text-2lg md:text-2lg font-bold text-black w-20 ml-14 "
+                       ClassName=" text-2lg md:text-2lg font-bold text-black w-20 ml-14 "
                       type="number"
                       value={balance}
                       onChange={(event) => setBalance(event.target.value)}
@@ -146,11 +146,11 @@ export const AccountForm = () => {
                   </div>
                 
                   
-                  <div className ="flex justify-start mb-4">
-                  <label class="text-2lg md:text-2lg font-bold text-white">
+                  <div ClassName ="flex justify-start mb-4">
+                  <label ClassName="text-2lg md:text-2lg font-bold text-white">
                     Min Payment:
                     <input
-                       class="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
+                       ClassName="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
                       type="number"
                       value={payment}
                       onChange={(event) => setPayment(event.target.value)}
@@ -158,14 +158,14 @@ export const AccountForm = () => {
                   </label>
                   </div>
                   
-                  <button class="text-2lg md:text-2lg font-bold text-white" type="submit" >Add Account</button>
+                  <button ClassName="text-2lg md:text-2lg font-bold text-white" type="submit" >Add Account</button>
                 </form>
                 <div>
                   <ul>
                     {accounts.map((account, index) => (
                       <li key={index}>
                         {account.name} (${account.balance}, ${account.payment})
-                        <button class="text-2lg md:text-2lg font-bold text-white"
+                        <button ClassName="text-2lg md:text-2lg font-bold text-white"
                           onClick={() => handleRemoveAccount(index)}
                         >Delete Account</button>
                       </li>
@@ -177,12 +177,12 @@ export const AccountForm = () => {
           </div>
         </div>
       </section>
-      <section class="bg-coolGray-50 py-4">
-          <div class="container px-4 mx-auto">
-            <div class="flex flex-wrap -m-3">
-              <div class=" mx-auto w-1/2 ">
-                <div class="bg-white border border-coolGray-100 shadow-dashboard rounded-md">
-                  <div class="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
+      <section ClassName="bg-coolGray-50 py-4">
+          <div ClassName="container px-4 mx-auto">
+            <div ClassName="flex flex-wrap -m-3">
+              <div ClassName=" mx-auto w-1/2 ">
+                <div ClassName="bg-white border border-coolGray-100 shadow-dashboard rounded-md">
+                  <div ClassName="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
       <p>You currently pay a total of         
       {<strong> ${fixedSum}</strong>} per month in minimum debt payments.  By cutting your debt in half, you can reduce your total monthly payments to
        {<strong> ${targetSumString} </strong>}
@@ -208,11 +208,11 @@ export default function Debt() {
   return (
     <>
     <Navbar />
-    <div class="py-20 bg-gray-900 radius-for-skewed">
-      <div class="container mx-auto px-6">
-        <div class="mb-16 max-w-md mx-auto text-center">
-          <h1 class=" text-4xl md:text-5x text-green-600 font-bold">Debts</h1>
-          <h2 class="text-4xl md:text-5xl font-bold text-white">
+    <div ClassName="py-20 bg-gray-900 radius-for-skewed">
+      <div ClassName="container mx-auto px-6">
+        <div ClassName="mb-16 max-w-md mx-auto text-center">
+          <h1 ClassName=" text-4xl md:text-5x text-green-600 font-bold">Debts</h1>
+          <h2 ClassName="text-4xl md:text-5xl font-bold text-white">
             Do you want to cut your monthly debt payments in half the snowball
             way?
           </h2>
