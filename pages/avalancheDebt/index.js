@@ -102,14 +102,14 @@ export const AccountForm = () => {
 
   return (
     <>
-      <div className="flex justify-center">
-        <section className="bg-coolGray-50 py-6 mr-20">
-          <div className="container px-9 mx-auto">
+      <div className="flex justify-center sm:w-full">
+        <section className="bg-coolGray-50 py-6  sm:w-full">
+          <div className="container px-9 mx-auto ml-7  mr-14">
             <div className="flex flex-wrap -m-3">
-              <div className=" grow w-14 w-full md:w-full xl:w-full sm:w-full  p-1 ">
-                <div className="bg-indigo-300 border border-coolGray-100 shadow-dashboard rounded-md ">
+              <div className=" grow w-14 w-full md:w-full xl:w-full sm:w-full mr-4  ">
+                <div className="bg-indigo-300 border border-coolGray-100 shadow-dashboard rounded-md w-full sm:w-auto ">
                   <div className="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
-                    <h4 className=" text-2xl md:text-3xl font-bold text-white">
+                    <h4 className=" text-2xl md:text-3xl font-bold text-white text-center">
                       Enter Account Data
                     </h4>
                   </div>
@@ -118,7 +118,7 @@ export const AccountForm = () => {
                       <label className="text-2lg md:text-2lg font-bold text-white mt-2 ">
                         Account Name
                         <input
-                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-2"
+                          className="text-2lg md:text-2lg font-bold text-black w-20"
                           type="text"
                           value={name}
                           onChange={(event) => setName(event.target.value)}
@@ -130,7 +130,7 @@ export const AccountForm = () => {
                       <label className="text-2lg md:text-2lg font-bold text-white">
                         Balance:
                         <input
-                          className=" text-2lg md:text-2lg font-bold text-black w-20 ml-14 "
+                          className=" text-2lg md:text-2lg font-bold text-black w-20 "
                           type="number"
                           value={balance}
                           onChange={(event) => setBalance(event.target.value)}
@@ -142,7 +142,7 @@ export const AccountForm = () => {
                       <label className="text-2lg md:text-2lg font-bold text-white">
                         Min Payment:
                         <input
-                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
+                          className="text-2lg md:text-2lg font-bold text-black w-20 "
                           type="number"
                           value={payment}
                           onChange={(event) => setPayment(event.target.value)}
@@ -154,7 +154,7 @@ export const AccountForm = () => {
                       <label className="text-2lg md:text-2lg font-bold text-white">
                         Interest Rate:
                         <input
-                          className="text-2lg md:text-2lg font-bold text-black w-20 ml-3.5"
+                          className="text-2lg md:text-2lg font-bold text-black w-20"
                           type="number"
                           value={interestRate}
                           onChange={(event) =>
@@ -195,7 +195,7 @@ export const AccountForm = () => {
         <section className="bg-coolGray-50 py-4">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap -m-3">
-              <div className=" mx-auto w-1/2 ">
+              <div className=" mx-auto w-44 sm:w-auto ">
                 <div className="bg-white border border-coolGray-100 shadow-dashboard rounded-md">
                   <div className="flex flex-col justify-center items-center px-4 pt-8 pb-6 border-b border-coolGray-100">
                     <p>
