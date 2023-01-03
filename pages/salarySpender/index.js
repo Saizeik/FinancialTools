@@ -66,7 +66,7 @@ Suggested` ||
                 income you need to fund your expenses, save for that dream
                 vacation, or even negotiate a well-deserved raise. By getting
                 your numbers straight, you can live the lifestyle you want with
-                peace of mind and financial security. Beep bop boop, let's get
+                peace of mind and financial security. Beep bop boop, go get
                 those finances in order!
               </p>
             </div>

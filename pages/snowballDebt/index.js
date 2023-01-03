@@ -119,7 +119,7 @@ export const AccountForm = () => {
             <div className=" grow  w-14 md:w-full xl:w-full sm:w-full mr-4 ">
               <div className="bg-green-600 border border-coolGray-100 shadow-dashboard rounded-md w-full sm:w-auto">
                 <div className="flex flex justify-center items-center px-4 pt-4 pb-6 border-b border-coolGray-100 "><h4 className=" text-2xl md:text-3xl font-bold text-white text-center">Enter Account Data</h4></div>
-                <form onSubmit={handleSubmit} class="sm:w-auto"  >
+                <form onSubmit={handleSubmit} className="sm:w-auto"  >
                 <div className ="flex flex  justify-start mb-4 sm:w-auto  ">
                   <label className="text-2lg md:text-2lg font-bold text-white mt-2 ">Account Name
                     <input
