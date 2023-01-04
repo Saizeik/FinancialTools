@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "/components/navbar.js";
-
+import Image from "next/image";
+import debt from "/public/debt.png"
 //const [debtBalance, setDebtBalance] = useState();
 //const[debtPayments, setDebtPayments]= useState();
 
@@ -115,13 +116,13 @@ export const AccountForm = () => {
     <div className ="flex justify-center sm:w-full">
       <section className="bg-coolGray-50 py-6 sm:w-full">
         <div className="container px-9 mx-auto  ml-7  mr-14">
-          <div className="flex flex-wrap -m-3">
-            <div className=" grow  w-14 md:w-full xl:w-full sm:w-full mr-4 ">
+          <div className="flex flex-wrap -m-5">
+            <div className=" grow  w-14 md:w-full xl:w-full sm:w-full mr-8 ">
               <div className="bg-green-600 border border-coolGray-100 shadow-dashboard rounded-md w-full sm:w-auto">
                 <div className="flex flex justify-center items-center px-4 pt-4 pb-6 border-b border-coolGray-100 "><h4 className=" text-2xl md:text-3xl font-bold text-white text-center">Enter Account Data</h4></div>
                 <form onSubmit={handleSubmit} className="sm:w-auto"  >
                 <div className ="flex flex  justify-start mb-4 sm:w-auto  ">
-                  <label className="text-2lg md:text-2lg font-bold text-white mt-2 ">Account Name
+                  <label className="text-2lg md:text-2lg font-bold text-white mt-2  ml-2">Account Name
                     <input
                     className="text-2lg md:text-2lg font-bold text-black w-20 "
                       type="text"
@@ -131,7 +132,7 @@ export const AccountForm = () => {
                   </label>
                   </div>
                   
-                  <div className ="flex justify-start mb-4 ">
+                  <div className ="flex justify-start mb-4 ml-2">
                   <label className="text-2lg md:text-2lg font-bold text-white">
                     Balance:
                     
@@ -146,7 +147,7 @@ export const AccountForm = () => {
                   </div>
                 
                   
-                  <div className ="flex justify-start mb-4">
+                  <div className ="flex justify-start mb-4 ml-2">
                   <label className="text-2lg md:text-2lg font-bold text-white">
                     Min Payment:
                     <input
@@ -158,14 +159,14 @@ export const AccountForm = () => {
                   </label>
                   </div>
                   
-                  <button className="text-2lg md:text-2lg font-bold text-white" type="submit" >Add Account</button>
+                  <button className="text-2lg md:text-2lg font-bold text-white ml-2" type="submit" >Add Account</button>
                 </form>
                 <div>
                   <ul>
                     {accounts.map((account, index) => (
-                      <li key={index}>
+                      <li key={index} className="text-2lg md:text-2lg font-bold text-black ml-2">
                         {account.name} (${account.balance}, ${account.payment})
-                        <button className="text-2lg md:text-2lg font-bold text-white"
+                        <button className="text-2lg md:text-2lg font-bold text-white "
                           onClick={() => handleRemoveAccount(index)}
                         >Delete Account</button>
                       </li>
@@ -211,6 +212,9 @@ export default function Debt() {
     <div className="py-20 bg-gray-900 radius-for-skewed">
       <div className="container mx-auto px-6">
         <div className="mb-16 max-w-md mx-auto text-center">
+        <div className="bg-coolGray-50  container  mx-auto px-2 mb-12  mt-2 h-14  w-1/4">
+              <Image src={debt} alt="image" className=" h-32 w-1/2" />
+            </div>
           <h1 className=" text-4xl md:text-5x text-green-600 font-bold">Debts</h1>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Do you want to cut your monthly debt payments in half the snowball

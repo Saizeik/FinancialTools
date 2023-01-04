@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar } from "/components/navbar.js";
-
+import Image from "next/image";
+import cash from "/public/cash.png";
 export default function Home() {
   const [monthlySpending, setMonthlySpending] = useState(0);
   const [monthlyMortgageRent, setMonthlyMortgageRent] = useState(0);
@@ -52,12 +53,15 @@ Suggested` ||
   return (
     <>
       <Navbar />
-      <div className="py-20 bg-gray-900 radius-for-skewed">
-        <div className="container mx-auto px-6">
-          <div className="mb-16 max-w-md mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white text-3xl font-bold underline">
+      <div className=" py-20 bg-gray-900 radius-for-skewed">
+        <div className="container  mx-auto px-6  ">
+          <div className="mb-16 max-w-md mx-auto text-center  ">
+            <h1 className="text-4xl md:text-6xl font-bold text-white text-3xl font-bold underline ">
               Salary Spender
             </h1>
+            <div className="bg-coolGray-50  container  mx-auto px-2  mt-8 h-14  w-1/4">
+              <Image src={cash} alt="cash icon" className=" h-32 w-1/2" />
+            </div>
           </div>
           <section className="bg-coolGray-50 py-2">
             <div className=" container w-1/2 h-85 mx-auto" >
@@ -70,13 +74,13 @@ Suggested` ||
                 those finances in order!
               </p>
             </div>
-            <div className="container justify-center mx-auto">
+            <div className="container justify-center mx-auto ">
               <div className="flex flex-wrap -m-3">
-                <div className="w-full mx-auto md:w-1/2 xl:w-1/4 p-3">
+                <div className="w-full mx-auto md:w-1/2 xl:w-1/4 p-3  ">
                   <div className="bg-teal-400  border border-coolGray-100 shadow-dashboard rounded-md ">
-                    <div className="flex flex-col justify-center items-center  px-4 pt-8 pb-6 border-b border-coolGray-100 ">
+                    <div className="flex flex-col justify-center items-center  px-4 pt-8 pb-6 border-b border-coolGray-100 w-22 ">
                       <form onSubmit={handleSubmit}>
-                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded mb-2  w-1/2 ">
+                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-blue-400 border rounded ml-14 mb-2  w-1/2 ">
                           <label className=" p-2" htmlFor="monthlySpending">
                             Monthly Spending:
                             <input
@@ -90,7 +94,7 @@ Suggested` ||
                             />
                           </label>
                         </div>
-                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-red-400 border rounded mb-2  w-1/2 ">
+                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-red-400 border rounded ml-14 mb-2  w-1/2 ">
                           <label className=" p-2" htmlFor="monthlyMortgageRent">
                             Monthly Housing:
                             <input
@@ -104,7 +108,7 @@ Suggested` ||
                             />
                           </label>
                         </div>
-                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-green-400 border rounded mb-2  w-1/2 ">
+                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-green-400 border rounded ml-14 mb-2  w-1/2 ">
                           <label className=" p-2" htmlFor="savingsDebt">
                             Monthly Savings:
                             <input
@@ -116,7 +120,7 @@ Suggested` ||
                             />
                           </label>
                         </div>
-                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-yellow-400 border rounded mb-2  w-1/2 ">
+                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-yellow-400 border rounded ml-14 mb-2  w-1/2 ">
                           <label className=" p-2" htmlFor="savingsDebt">
                             Monthly Debt:
                             <input
@@ -128,7 +132,7 @@ Suggested` ||
                             />
                           </label>
                         </div>
-                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-purple-400 border rounded mb-2  w-1/2 ">
+                        <div className="block flex text-2lg md:text-2lg font-bold text-white bg-purple-400 border rounded ml-14 mb-2  w-1/2 ">
                           <button
                             className=" text-white text-center rounded-full py-2 px-12"
                             type="submit"
